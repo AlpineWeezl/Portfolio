@@ -1,0 +1,37 @@
+* {
+    font-family: Inconsolata, sans-serif;
+}
+
+#slogan {
+font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.section-header {
+    text-transform: lowercase;
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+h2 {
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+section {
+    height: calc(100vh - 3rem);
+}
+
+#socialbar {
+    font-size: 3rem;
+}
