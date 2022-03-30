@@ -2,6 +2,18 @@
     font-family: Inconsolata, sans-serif;
 }
 
+nav {
+    text-transform: lowercase;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.v-line {
+    border-right: 1px solid black;
+}
+
 #slogan {
 font-size: 2rem;
 }
