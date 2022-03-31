@@ -17,7 +17,7 @@
 
 <body>
     <header class="sticky-top shadow">
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid w-75">
                 <a class="navbar-brand p-0" href="#">Matthias Wieser</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,83 +54,147 @@
         </nav>
     </header>
     <main class="container-fluid">
-        <section class="row align-items-center bg-info">
-            <div class="container text-center justify-content-center">
-                <div class="row" id="slogan">
+        <section class="row align-items-center" id="slogan">
+            <div class="container text-center justify-content-center text-light w-75 mx-auto" id="slogan-text"
+                style="text-shadow: 0 0 15px black;">
+                <div class="row">
                     <div class="col">
-                        <p class="mb-5">$ echo 'Hello World' // Hello World</p>
+                        <p class="mb-5 text-light text-center">$ echo 'Hello World' // Hello World</p>
                         <h1 class="mb-5">I'm Matthias a Full Stack Web Dev</h1>
                     </div>
                 </div>
-                <div class="row align-bottom" id=" scroll-indicator">
-                    <div class="col">
-                        <p>Here comes a scroll indicator</p>
-                    </div>
-                </div>
             </div>
+            <a href="#facts" id="scroll-down"></a>
         </section>
         <section class="row align-items-center" id="facts">
-            <div class="container w-50">
+            <div class="container p-3">
                 <div class="row align-items-center">
-                    <div class="col-1 ">
-                        <header class="col-1 section-header">
-                            <h2>Facts</h2>
-                        </header>
-                    </div>
+                    <header class="col-1 section-header">
+                        <h2>Facts</h2>
+                    </header>
                     <div class="col">
-                        <div class="container">
-                            <div class="row align-items-center">
+                        <div class="container-fluid container-100 p-0">
+                            <div class="row align-items-center container-100 p-0">
                                 <figure class="col-sm-8 col-md-4 col-lg-3 col-xl-2" id="factsFig">
                                     <img class="img-fluid rounded-pill shadow mx-auto" src="./src/pics/Profil.jpg"
                                         alt="Portrait of Matthias Wieser">
                                 </figure>
-
-                                <div class="col">
-                                    <h3>I'm Matthias,
-                                        <p>raised up and living in Allgäu/Germany. My current challenge is to complete a
-                                            Full Stack Web and App Dev Bootcamt at the WBS-Coding School.</p>
-                                            <p>My gratest supporters are my two lovely children and my wife, of course</p>
-                                            <p>During this pretty challenging but effectful training I realized my</p>
-
-                                        <ul>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li>married</li>
-                                            <li>two kids</li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                        ea
-                                        odio
-                                        debitis
-                                        doloremque nostrum incidunt! Voluptatum, corporis saepe? Quasi officia
-                                        doloremque
-                                        sapiente
-                                        dolore
-                                        excepturi asperiores, quisquam voluptates facere.
-                                    </h3>
+                                <div class="col text-justify">
+                                    <h3>I'm Matthias,</h3>
+                                    <p>
+                                        thirty-eight years old, raised up and living in Pfronten im Allgäu /
+                                        Germany.
+                                    </p>
+                                    <p>
+                                        My current challenge is
+                                        to complete a Full Stack Web and App Dev Bootcamt at the WBS-Coding School.
+                                    </p>
+                                    <p>
+                                        My gratest supporters are my two lovely children (six and eight years old)
+                                        and my wife, of course.
+                                    </p>
+                                    <p>
+                                        Through this rather challenging but effectful training,
+                                        I am able to expand
+                                        and consolidate my knowlege of coding.
+                                    </p>
                                     <p><a href="#">Here goes the link to CV</a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-        <section class="row align-items-center bg-info" id="skills">
-            <div class="container w-50">
+        <section class="row align-items-center" id="skills">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col">
-                        <p>Here comes a carousel with Cards of the techs like HTML, CSS, JS, ...</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab blanditiis iure modi
-                            debitis dicta officia, quis dolorem sit autem deserunt rem vitae molestias laborum fuga quo.
-                            Culpa, suscipit nisi?</p>
-                        <p><a href="#">maybe a 'more' link</a></p>
+                        <div class="container">
+                            <div class="row my-5 justify-content-center">
+                                <div class="flip-card mx-3">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front rounded-3 shadow bg-body align-items-center">
+                                            <img src="./src/pics/HTML.png" alt="HTML Logo" style="width: 100%;">
+                                        </div>
+                                        <div class="flip-card-back rounded-3 shadow bg-body text-black">
+                                            <h3>HTML5</h3>
+                                            <p>Architect & Engineer</p>
+                                            <p>We love that guy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card mx-3">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front rounded-3 shadow bg-body align-items-center">
+                                            <img src="./src/pics/CSS.png" alt="HTML Logo" style="width: 100%;">
+                                        </div>
+                                        <div class="flip-card-back rounded-3 shadow bg-body text-black">
+                                            <h3>CSS</h3>
+                                            <p>Architect & Engineer</p>
+                                            <p>We love that guy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card mx-3">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front rounded-3 shadow bg-body align-items-center">
+                                            <img src="./src/pics/JS.png" alt="HTML Logo" style="width: 100%;">
+                                        </div>
+                                        <div class="flip-card-back rounded-3 shadow bg-body text-black">
+                                            <h3>JavaScript</h3>
+                                            <p>Architect & Engineer</p>
+                                            <p>We love that guy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="flip-card mx-3">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front rounded-3 shadow bg-body align-items-center">
+                                            <img src="./src/pics/React.png" alt="HTML Logo" style="width: 100%;">
+                                        </div>
+                                        <div class="flip-card-back rounded-3 shadow bg-body text-black">
+                                            <h3>React</h3>
+                                            <p>Architect & Engineer</p>
+                                            <p>We love that guy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card mx-3">
+                                    <div class="flip-card-inner">
+                                        <div
+                                            class="flip-card-front rounded-3 shadow bg-body align-items-center container">
+                                            <div class="col">
+                                                <img src="./src/pics/Bootstrap.png" alt="HTML Logo"
+                                                    style="width: 100%;">
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back rounded-3 shadow bg-body text-black">
+                                            <h3>Bootstrap</h3>
+                                            <p>Architect & Engineer</p>
+                                            <p>We love that guy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card mx-3">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front rounded-3 shadow bg-body align-items-center">
+                                            <img src="./src/pics/GitHub.png" alt="HTML Logo" style="width: 100%;">
+                                        </div>
+                                        <div class="flip-card-back rounded-3 shadow bg-body text-black">
+                                            <h3>Git / GitHub</h3>
+                                            <p>Architect & Engineer</p>
+                                            <p>We love that guy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <header class="col-1 section-header">
+                    <header class="col-1 section-header text-light">
                         <h2>Skills</h2>
                     </header>
                 </div>
@@ -198,9 +262,9 @@
                             <div class="row">
                                 <div class="col">
                                     <p><a href="https://www.linkedin.com/in/matthias-wieser-b6b571b4/" target="blank"><i
-                                                class="fa fa-linkedin"></i></p></a>
+                                                class="fa fa-linkedin text-black"></i></p></a>
                                     <p><a href="https://github.com/AlpineWeezl" target="blank"><i
-                                                class="fa fa-github"></i></p></a>
+                                                class="fa fa-github text-black"></i></p></a>
                                 </div>
                             </div>
                         </div>
@@ -212,9 +276,9 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container text-center my-3">
-            <p>Designed and created by Matthias Wieser, 2022</p>
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>pictures, as well as web design and coding by Matthias Wieser, 2022</p>
             <p>last Update Mar, 2022</p>
         </div>
     </footer>
