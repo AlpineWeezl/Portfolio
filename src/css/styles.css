@@ -2,6 +2,10 @@
     font-family: Inconsolata, monospace;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .text-justify {
     text-align: justify;
 }
