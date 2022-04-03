@@ -119,7 +119,7 @@ h2 {
 }
 
 section {
-    min-height: calc(100vh - 3rem);
+    min-height: calc(100vh);
 }
 
 .container-100 {
@@ -174,7 +174,7 @@ section {
 
 
 #skills {
-    background-image: url(../pics/IMG_20220330_201902.png);
+    background-image: url(../pics/2022-03-31\ \(2\).png);
     background-size: cover;
 }
 
