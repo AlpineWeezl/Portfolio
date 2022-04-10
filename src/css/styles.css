@@ -56,6 +56,21 @@ h1, .h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-shadow: 0 0 20px #000;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 .section-header {
     text-transform: uppercase;
     position: relative;
@@ -107,6 +122,12 @@ h1, .h1 {
     min-width: 40px;
 }
 
+#contact {
+    color: #fff;
+    background-image: url(../pics/DSC03274_Landscape.png);
+    background-size: cover;
+}
+
 @keyframes bounce {
 
     0%,
@@ -130,16 +151,6 @@ h1, .h1 {
         -ms-transform: translateY(-5px);
         transform: translateY(-5px);
     }
-}
-
-h2 {
-    font-size: 8rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
 }
 
 section {
@@ -177,10 +188,18 @@ section {
 }
 
 #socialbar {
-    font-size: 3rem;
+    background-color: #ffffff44;
+    border: 2px solid #fff;
+    margin: 0 2em;
+    padding: 1em 0;
 }
 
-footer div p{
+.socialLink {
+    text-shadow: 0 0 0.5em #000 ;
+    font-size: 4rem;
+}
+
+footer div p {
     text-align: center;
 }
 
