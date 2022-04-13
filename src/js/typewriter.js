@@ -4,7 +4,7 @@ const textCollection = [
     "Console.WriteLine ('Hello World!'); // Hello World!",
     "var_dump ('Hello World!'); // string(12) \"Hello World!\"",
     "\<h1\>Hello World!\<\/h1\>",
-    "System.out.println('Hello World!'); // Hello World"
+    "System.out.println('Hello World!'); // Hello World!"
 
 ];	// Anzuzeigender Text, KEIN < oder >
 const duration = 100; // Dauer pro Buchstabe in ms
