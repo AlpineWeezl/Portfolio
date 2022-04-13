@@ -25,20 +25,35 @@ nav {
 #slogan {
     background-image: url(../pics/IMG_20220330_201902_blur_bw_cyan.png);
     background-size: cover;
-    font-size: 2rem;
     text-align: center;
     min-height: calc(100vh);
 }
 
+#slogan-text {
+    text-shadow: 0 0 15px black;
+    width: fit-content;
+    padding: 0 2em;
+}
+
+#codeLine {
+    font-size: 1.5rem;
+}
+
 #messages {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    padding: 0 1em;
     overflow: hidden;
-    height: 9rem;
+    height: 10rem;
     background-color: #ffffff44;
     border: 2px solid #fff;
 }
 
 #main-messages {
-    margin-top: 0;
+    font-size: 6rem;
+    line-height: 10rem;
+    margin: 0;
     text-align: left;
     list-style: none;
     text-align: center;
@@ -46,14 +61,8 @@ nav {
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
     animation-name: change;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
-}
-
-h1, .h1 {
-    font-size: 8rem;
-    line-height: 8rem;
-    margin: 0;
 }
 
 h2 {
@@ -61,10 +70,14 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    text-shadow: 0 0 20px #000;
     transform: translateX(-50%) translateY(-50%) rotate(-90deg);
     -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
     -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+h3 {
+    font-size: 3rem;
+    text-shadow: 0 0 .5em #fff;
 }
 
 p {
@@ -141,15 +154,15 @@ p {
     }
 
     40% {
-        -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
+        -webkit-transform: translateY(-1em);
+        -ms-transform: translateY(-1em);
+        transform: translateY(-1em);
     }
 
     60% {
-        -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        transform: translateY(-5px);
+        -webkit-transform: translateY(-.5em);
+        -ms-transform: translateY(-.5em);
+        transform: translateY(-.5em);
     }
 }
 
@@ -187,6 +200,11 @@ section {
     background-size: cover;
 }
 
+.carousel-caption {
+    background-color: #00000044;
+    border: 2px solid #fff;
+}
+
 #socialbar {
     background-color: #ffffff44;
     border: 2px solid #fff;
@@ -195,7 +213,7 @@ section {
 }
 
 .socialLink {
-    text-shadow: 0 0 0.5em #000 ;
+    text-shadow: 0 0 0.5em #000;
     font-size: 4rem;
 }
 
@@ -305,5 +323,57 @@ footer div p {
 
     83.3%, 95.96% {
         transform: translate3d(0, -25%, 0);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #slogan {
+        font-size: 0.66rem;
+    }
+
+    #messages {
+        height: 8rem;
+    }
+
+    #main-messages {
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        width: 85%;
+    }
+    #codeLine {
+        font-size: 1rem;
+    }
+
+    #messages {
+        height: 6rem;
+    }
+
+    #main-messages {
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #navbar {
+        width: 95%;
+        justify-content: space-around;
+    }
+    #codeLine {
+        font-size: 0.9rem;
+    }
+
+    #messages {
+        height: 5rem;
+    }
+
+    #main-messages {
+        font-size: 3rem;
+        line-height: 5rem;
     }
 }
